@@ -1,5 +1,5 @@
 # IFOOD CASHBOARD - UMA APLICAÇÃO DE CONTROLE FINANCEIRO PARA SEU ESTABELECIMENTO ⚙️💸
-
+👥 Equipe: Bernardo Marques, Felipe Zanola, Otavio Goularti Barreto Silva, Matheus Gonçalves e Victor de Souza Santos.
 ## Sumário
 1. Apresentação
 2. Nav
