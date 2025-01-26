@@ -1,0 +1,524 @@
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --vermelho: #FF001B;
+    --branco: #fff;
+    --cinza: #EEEEEE;
+    --sombra: #727171;
+    --preto: #000;
+}
+
+body {
+    background-color: var(--cinza);
+}
+
+/* corpo do site flutuando na direita do header horizontal */
+.corpo-site {
+    margin-left: 8.5rem;
+    /* Espaço suficiente para evitar o header */
+}
+
+@media(max-width: 845px) {
+    .corpo-site {
+        margin-left: 0;
+    }
+}
+
+@media(min-width: 1700px) {
+    .corpo-site {
+        margin-left: 0;
+    }
+}
+
+/* --------------------------- CONTEUDO DO CORPO DO SITE --------------------------- */
+/* ----------------------------- BEM-VINDO -----------------------------*/
+.bemVindo {
+    background-color: var(--vermelho);
+    display: flex;
+    border-radius: 30px;
+    box-shadow: 1px 1px 4px var(--sombra);
+    padding: 0 2rem;
+    overflow: visible;
+}
+
+.esquerdaBemvindo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.bemVindo h2 {
+    font-size: 1rem;
+    color: var(--branco);
+}
+
+.bvBtn {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.bvBtn h1 {
+    font-size: 1.8rem;
+    color: var(--branco);
+}
+
+.textosBV h1 {
+    font-size: 1.8rem;
+    color: var(--branco);
+    font-weight: 600;
+    text-align: center;
+}
+
+.bvBtn button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5rem;
+    width: 6rem;
+    border: 1px solid var(--branco);
+    color: var(--branco);
+    font-size: 1rem;
+    padding: 0;
+}
+
+.bvBtn button:hover {
+    background-color: var(--branco);
+    color: var(--vermelho);
+}
+
+.direitaBemvindo img {
+    max-width: 100%;
+    margin-top: -30px;
+}
+
+/* ----------------------------- PERFIL -----------------------------*/
+.perfil {
+    background-color: var(--branco);
+    border-radius: 30px;
+    box-shadow: 1px 1px 4px var(--sombra);
+}
+
+.cimaPerfil {
+    background-color: var(--vermelho);
+    padding: 1rem;
+    margin: 0 -11px 10px -11px;
+    border-radius: 30px;
+    box-shadow: 1px 1px 4px var(--sombra);
+    display: flex;
+}
+
+.cimaPerfil h1 {
+    font-size: 1.8rem;
+    color: var(--branco);
+}
+
+.cimaPerfil i {
+    font-size: 1.7rem;
+    color: var(--branco);
+    cursor: pointer;
+}
+
+.baixoPerfil {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+}
+
+.baixoPerfil h2 {
+    font-size: 1.5rem;
+}
+
+.baixoPerfil p {
+    font-size: 0.8rem;
+}
+
+.esquerdaPerfil {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.localizacao {
+    display: flex;
+}
+
+.dadosRestaurante {
+    display: flex;
+    justify-content: center;
+}
+
+.dadosRestaurante .pt-2 {
+    color: var(--vermelho);
+    font-weight: 600;
+    text-align: center;
+}
+
+.linhaPerfil {
+    border-left: 2px solid rgba(255, 0, 0, 0.26);
+    height: 3rem;
+}
+
+
+/* ---------------------------- PESQUISA ----------------------------*/
+.pesquisa2,
+.pesquisaMd {
+    display: none;
+}
+
+.pesquisa,
+.pesquisa2 {
+    background-color: var(--branco);
+    box-shadow: 1px 1px 4px var(--sombra);
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.pesquisa input,
+.pesquisa2 input {
+    border: none;
+    font-size: 1.4rem;
+}
+
+.textoPesquisa::placeholder,
+.textoPesquisa2::placeholder {
+    color: rgba(117, 113, 113, 0.7);
+}
+
+.pesquisa button,
+.pesquisa2 button {
+    border: none;
+    color: var(--vermelho);
+    font-size: 1.4rem;
+}
+
+.pesquisa button:hover,
+.pesquisa2 button:hover {
+    color: var(--branco);
+    background-color: var(--vermelho);
+}
+
+/* ------------------------------- MES ------------------------------*/
+.mes {
+    background-color: var(--vermelho);
+    box-shadow: 1px 1px 4px var(--sombra);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.mes h1 {
+    font-size: 1.6rem;
+    color: var(--branco);
+}
+
+.mes select {
+    width: 35%;
+    height: 3rem;
+    background-color: rgba(238, 238, 238, 0.5);
+    border: none;
+    color: var(--branco);
+}
+
+.form-select option {
+    color: var(--preto);
+}
+
+/* ---------------------------- GRÁFICOS ----------------------------*/
+.cimaGraficos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.cimaGraficos h1 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--vermelho);
+}
+
+.cimaGraficos select {
+    font-size: 0.7rem;
+    padding: 0 0 0 5px;
+    width: 40%;
+    height: 1.9rem;
+    background-color: rgba(238, 238, 238, 0.5);
+    border: none;
+    color: var(--preto);
+}
+
+/* ----------------------- RECEITAS X DESPESAS ----------------------*/
+.receitasDespesas {
+    background-color: var(--branco);
+    box-shadow: 1px 1px 4px var(--sombra);
+    border-radius: 20px;
+}
+
+.colunaGrafico canvas {
+    max-width: 100%;
+}
+
+.legendaColunaGrafico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.6rem;
+    font-family: 'Poppins';
+}
+
+.legendaColunaCor {
+    width: 20px;
+    height: 10px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* ------------------------ VOLUME X PEDIDOS  -----------------------*/
+.volumePedidos {
+    background-color: var(--branco);
+    box-shadow: 1px 1px 4px var(--sombra);
+    border-radius: 20px;
+}
+
+.linhaGrafico canvas {
+    max-width: 100%;
+}
+
+/* ------------------ PRODUTO MAIS E MENOS VENDIDO ------------------*/
+.produtoMaisMenos {
+    background-color: var(--branco);
+    box-shadow: 1px 1px 4px var(--sombra);
+    border-radius: 20px;
+}
+
+.maisVendido,
+.menosVendido {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.maisVendido h2,
+.menosVendido h2 {
+    font-size: 1.3rem;
+}
+
+.maisVendido h3,
+.menosVendido h3 {
+    font-size: 1rem;
+}
+
+.maisVendido img,
+.menosVendido img {
+    width: 4rem;
+}
+
+.esquerdaVendas {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ---------------------- DESPESAS X CATEGORIA ----------------------*/
+.despesasCategoria {
+    background-color: var(--branco);
+    box-shadow: 1px 1px 4px var(--sombra);
+    border-radius: 20px;
+}
+
+.pizzaGraficoContainer {
+    display: flex;
+    align-items: center;
+}
+
+.pizzaGrafico {
+    margin-left: -50px;
+    width: 100%;
+}
+
+.legendaPizzaGrafico div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    font-family: 'Poppins';
+    margin-left: -50px;
+}
+
+.legendaPizzaCor {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* ---------------------- NUMERO DE AVALIACOES ----------------------*/
+.numeroAvaliacoes {
+    background-color: var(--branco);
+    box-shadow: 1px 1px 4px var(--sombra);
+    border-radius: 20px;
+}
+
+.barraGrafico canvas {
+    width: 100%;
+}
+
+/* ---------------------------- EXTRATO -----------------------------*/
+.adicionar a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.adicionar {
+    background-color: var(--vermelho);
+    border: none;
+    border-radius: 20px;
+    color: var(--branco);
+    transition: all 0.2s;
+    font-size: 1.5rem;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 1px 1px 4px var(--sombra);
+}
+
+.pdf .seta {
+    fill: var(--vermelho);
+    transition: all 0.2s;
+}
+
+.adicionar:hover .seta {
+    fill: var(--branco);
+}
+
+.pdf path {
+    fill: var(--branco);
+    transition: all 0.2s;
+}
+
+.adicionar:hover svg path {
+    fill: var(--vermelho);
+}
+
+.adicionar:hover {
+    background-color: var(--branco);
+    border: 1px solid var(--vermelho);
+    color: var(--vermelho);
+}
+
+/* ---------------------------- RESPONSIVO -----------------------------*/
+@media (min-width: 992px) and (max-width: 1400px) {
+    .receitasDespesas select, .volumePedidos select {
+        width: 60%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .direitaBemvindo img {
+        max-width: 110%;
+        margin-left: 1rem;
+        margin-top: 2rem;
+    }
+
+    .perfil img{
+        display: none;
+    }
+
+    .baixoPerfil {
+        justify-content: center;
+    }
+
+    .colunaGraficoContainer, .linhaGraficoContainer {
+        margin-top: 1rem;
+    }
+}
+
+@media(max-width: 991px) {
+    .pesquisa,
+    .pesquisaLg {
+        display: none;
+    }
+
+    .pesquisa2,
+    .pesquisaMd {
+        display: flex;
+    }
+
+    .pesquisaMd {
+        padding: 1rem;
+    }
+
+    .pesquisa2 {
+        margin-top: 1.5rem;
+    }
+
+    .colunaGrafico, .linhaGrafico, .pizzaGrafico, .barraGrafico {
+        display: flex;
+        justify-content: center;
+    }
+
+    .pizzaGrafico, .barraGrafico canvas {
+        width: 70%;
+    }
+    
+    .pizzaGraficoContainer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .pizzaGrafico {
+        margin-bottom: 1rem;
+    }
+
+    .legendaPizzaGrafico div {
+        margin-left: -50px;
+    }
+
+    .legendaPizzaCor {
+        margin-left: 10px;
+    }
+
+    .adicionar {
+        width: 100%;
+        font-size: 2rem;
+    }
+
+    .pdf{
+        width: 20%;
+    }
+}
+
+@media(max-width: 545px){
+    .bemVindo {
+        display: flex;    
+        flex-direction: column;
+    }
+    
+    .esquerdaBemvindo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    .direitaBemvindo{
+        display: none;
+    }
+
+    .legendaPizzaCor {
+        width: 10px;
+        height: 10px;
+        margin-left: 10px;
+    }
+}
